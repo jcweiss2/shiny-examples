@@ -1,5 +1,6 @@
 library(shiny)
 library(datasets)
+library(survival)
 
 # Define server logic required to summarize and view the selected
 # dataset
@@ -16,7 +17,8 @@ function(input, output) {
     switch(input$dataset,
            "rock" = rock,
            "pressure" = pressure,
-           "cars" = cars)
+           "cars" = cars,
+           "pbc" = pbc)
   })
   
   # The output$caption is computed based on a reactive expression

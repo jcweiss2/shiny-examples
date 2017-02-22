@@ -17,8 +17,7 @@ function(input, output) {
     switch(input$dataset,
            "rock" = rock,
            "pressure" = pressure,
-           "cars" = cars,
-           "pbc" = pbc)
+           "cars" = cars)
   })
   
   # The output$caption is computed based on a reactive expression
